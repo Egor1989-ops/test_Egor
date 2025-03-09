@@ -15,3 +15,5 @@ def run_script():
     driver = Chrome(options=options)
     driver.get("https:skillbox.ru")
     driver.quit()
+
+
