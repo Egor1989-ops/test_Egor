@@ -20,4 +20,3 @@ def selenium(pytestconfig):
     yield driver
     driver.quit()
 
-

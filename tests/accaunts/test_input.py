@@ -3,7 +3,7 @@ from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
 class TestImput:
-    def test_send_keys(self, set_up_browser):
+    def test_send_keys(self, selenium):
         driver = set_up_browser
         driver.get('https://github.com/microsoft/vscode/issues')
         driver.find_element(By.XPATH, '//button[@id="query-builder-twet-clear-button"]')/click()
@@ -11,7 +11,7 @@ class TestImput:
         pass
 
 class Tests:
-    def test_2(self, set_up_browser):
+    def test_2(self, selenium):
         driver = set_up_browser
         driver.get('https://github.com/microsoft/vscode/issues')
         driver.find_element(By.XPATH, '(//div[@data-sestid="action-bar-autors"]/descendant::button"]')/click()
@@ -21,7 +21,7 @@ class Tests:
 
 
 class Tests:
-    def test_3(self, set_up_browser):
+    def test_3(self, selenium):
         driver = set_up_browser
         driver.get('https://github.com/microsoft/vscode/issues')
         driver.find_element(By.XPATH, '(//select[@id="search_language"]').send_keys("Python")
@@ -31,13 +31,13 @@ class Tests:
 
 
 class TestRadiobutton:
-    def test_radio_button(self, set_up_browser):
+    def test_radio_button(self, selenium):
         driver.get('https://skillbox.ru/code/')
         driver.find_element(By.CSS_SELECTOR, input[value='profession']).click()
         pass
 
 class TestSlider:
-    def test_slider(self, set_up_browser):
+    def test_slider(self, selenium):
         driver = set_up_browser
         driver.get('https://skillbox.ru/code/')
         
