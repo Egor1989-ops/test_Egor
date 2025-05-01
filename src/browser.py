@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import options
 
 
 @pytest.fixture()
-def selenium(pytestconfig):
+def go_to_url(page):
     options = Options()
     options.page.load_strategy = 'normal'
     driver = Remote(
